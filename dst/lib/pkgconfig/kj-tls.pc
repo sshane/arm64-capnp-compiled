@@ -1,0 +1,11 @@
+prefix=/home/shane/capnp/capnproto/c++/dst
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: KJ TLS Adapters
+Description: Basic utility library called KJ (TLS part)
+Version: 0.10-dev
+Libs: -L${libdir} -lkj-tls -pthread  -lpthread 
+Requires: kj-async = 0.10-dev
+Cflags: -I${includedir} -pthread  
